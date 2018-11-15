@@ -1,0 +1,49 @@
+@keyframes slideUp {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+
+.solver {
+    margin-top: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.problem-images {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.problem-images img.active { 
+    animation: slideUp .5s;
+}
+
+.members p.active {
+    animation: slideRight .5s;
+}
