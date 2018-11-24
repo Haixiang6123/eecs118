@@ -33,11 +33,16 @@
 }
 
 .problem-images {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    width: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.problem-images img {
+    max-width: 300px;
 }
 
 .problem-images img.active { 

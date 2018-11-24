@@ -1,4 +1,4 @@
-! function () {
+! function() {
     renderGroup('Group A')
 }()
 
@@ -28,7 +28,7 @@ function renderGroup(groupId) {
     $groupTitle.text(groupId)
 
     groupData.images.forEach(imageSrc => {
-        $problemImages.append(`<img class="d-block w-100" src="${imageSrc}">`)
+        $problemImages.append(`<img class="d-block" src="${imageSrc}">`)
     });
 
     groupData.members.forEach(memberData => {
@@ -41,11 +41,11 @@ function renderGroup(groupId) {
 }
 
 function animate() {
-    $('#problem-images img').each(function () {
+    $('#problem-images img').each(function() {
         $(this).addClass('active')
     })
 
-    $('#members p').each(function () {
+    $('#members p').each(function() {
         $(this).addClass('active')
     })
 }
