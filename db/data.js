@@ -1,21 +1,32 @@
+function makeUrl(name, entry='index.jsp', isPy) {
+    if (!name) {
+        return '#'
+    }
+    if (isPy) {
+        return `http://localhost:8080/test/cgi-bin/${name}/${entry}` 
+    } else {
+        return `http://localhost:8080/test/jsp/${name}/${entry}`
+    }
+}
+
 const db = {
     'Group A': {
         category: 'Group A',
         members: [{
                 name: 'Silver Zhang',
-                url: '#'
+                url: makeUrl('Silver', 'problem1.py', true)
             },
             {
                 name: 'Aakif Hussaini',
-                url: '#'
+                url: makeUrl()
             },
             {
                 name: 'Derrell Record',
-                url: '#'
+                url: makeUrl('Record', 'drecord_drecord_index.py', true)
             },
             {
                 name: 'Benjamin Ng',
-                url: '#'
+                url: makeUrl('52889465_GEO', 'Geo_Prob_Web.jsp')
             }
         ],
         images: [
@@ -27,15 +38,15 @@ const db = {
         category: 'Group B',
         members: [{
                 name: 'Zunwen Li',
-                url: '#'
+                url: makeUrl('Zunwen', 'index.jsp')
             },
             {
                 name: 'Hongyi Li',
-                url: '#'
+                url: makeUrl('Hongyi', 'index.jsp')
             },
             {
                 name: 'Zhifang Zeng',
-                url: '#'
+                url: makeUrl('Zhifang', 'index.html')
             }
         ],
         images: [
@@ -46,15 +57,15 @@ const db = {
         category: 'Group C',
         members: [{
                 name: 'Steven Long',
-                url: '#'
+                url: makeUrl('Steven', 'index.jsp')
             },
             {
                 name: 'Diego Torres',
-                url: '#'
+                url: makeUrl()
             },
             {
                 name: 'Arian Reyes',
-                url: '#'
+                url: makeUrl()
             }
         ],
         images: [
@@ -65,15 +76,15 @@ const db = {
         category: 'Group D',
         members: [{
                 name: 'Steven Huynh',
-                url: '#'
+                url: makeUrl()
             },
             {
                 name: 'Rick Jiang',
-                url: '#'
+                url: makeUrl('Rick', 'diagram_1.py', true)
             },
             {
                 name: 'Yunyun Li',
-                url: '#'
+                url: makeUrl('Yunyun', 'index.jsp')
             }
         ],
         images: [
@@ -84,16 +95,16 @@ const db = {
     'Group E': {
         category: 'Group E',
         members: [{
-            name: 'Daniel Mendoza',
-            url: '#'
-        },
+                name: 'Daniel Mendoza',
+                url: makeUrl('Mendoza', 'index.jsp')
+            },
             {
                 name: 'Sean Michael Santarsiero',
-                url: '#'
+                url: makeUrl('Sean', 'web_app_main.py', true)
             },
             {
                 name: 'Rui Ji',
-                url: '#'
+                url: makeUrl('Ji', 'hello.py', true)
             }
         ],
         images: [
@@ -104,16 +115,16 @@ const db = {
     'Group F': {
         category: 'Group F',
         members: [{
-            name: 'Mohammad Gagai',
-            url: '#'
-        },
+                name: 'Mohammad Gagai',
+                url: makeUrl('Mohammad', 'index.py', true)
+            },
             {
                 name: 'Joseph Bacon',
-                url: '#'
+                url: makeUrl()
             },
             {
                 name: 'Bibek Adhikari',
-                url: '#'
+                url: makeUrl('Bibek', 'adhikarb_index.html')
             }
         ],
         images: [
@@ -121,18 +132,18 @@ const db = {
         ]
     },
     'Group G': {
-        category: 'Group D',
+        category: 'Group G',
         members: [{
-            name: 'Yutong Wang',
-            url: '#'
-        },
+                name: 'Yutong Wang',
+                url: makeUrl('Yutong', 'index.html')
+            },
             {
                 name: 'Ajan Subramanian',
-                url: '#'
+                url: makeUrl('Subramanian', 'ajans_Geo_web.py', true)
             },
             {
                 name: 'JD Ingal',
-                url: '#'
+                url: makeUrl('Ingal', 'jringal_geoweb.jsp')
             }
         ],
         images: [
@@ -142,16 +153,16 @@ const db = {
     'Group H': {
         category: 'Group H',
         members: [{
-            name: 'Richemond Louidor',
-            url: '#'
-        },
+                name: 'Richemond Louidor',
+                url: makeUrl('Richemond', 'userInput.py', true)
+            },
             {
                 name: 'Brian Truong',
-                url: '#'
+                url: makeUrl('Brian', 'hello.py', true)
             },
             {
                 name: 'Daniel Truong',
-                url: '#'
+                url: makeUrl('Daniel', 'dtruong6_web.py', true)
             }
         ],
         images: [
@@ -161,16 +172,16 @@ const db = {
     'Group I': {
         category: 'Group I',
         members: [{
-            name: 'Faisal Iqbal',
-            url: '#'
-        },
+                name: 'Faisal Iqbal',
+                url: makeUrl('Faisal', 'iqbalf_webApp.py', true)
+            },
             {
-                name: 'Brandon Schnedar',
-                url: '#'
+                name: 'Brandon Schnedar *',
+                url: makeUrl('Schnedar', 'index.jsp')
             },
             {
                 name: 'Ziri Zhou',
-                url: '#'
+                url: makeUrl()
             }
         ],
         images: [
@@ -180,16 +191,16 @@ const db = {
     'Group J': {
         category: 'Group J',
         members: [{
-            name: 'Renetta Nelson',
-            url: '#'
-        },
+                name: 'Renetta Nelson',
+                url: makeUrl('Renetta', 'renettan_WebProblemmSolver.py', true)
+            },
             {
                 name: 'Janzal Karlo Sonza',
-                url: '#'
+                url: makeUrl('Janzal', 'jsonza_test.py', true)
             },
             {
                 name: 'George Toc',
-                url: '#'
+                url: makeUrl()
             }
         ],
         images: [
@@ -199,16 +210,16 @@ const db = {
     'Group K': {
         category: 'Group K',
         members: [{
-            name: 'Qing Huang',
-            url: '#'
-        },
+                name: 'Qing Huang',
+                url: makeUrl('Qing', 'compute1.py', true)
+            },
             {
                 name: 'Hikaru Kasai',
-                url: '#'
+                url: makeUrl()
             },
             {
                 name: 'Juan Rodriguez',
-                url: '#'
+                url: makeUrl('Juan', 'WEB-INF/cgi/webapp.py', true)
             }
         ],
         images: [
@@ -220,16 +231,16 @@ const db = {
     'Group L': {
         category: 'Group L',
         members: [{
-            name: 'Ian Dang',
-            url: '#'
-        },
+                name: 'Ian Dang',
+                url: makeUrl('Dang', 'home.html')
+            },
             {
                 name: 'Li Cai',
-                url: '#'
+                url: makeUrl('Cai', 'index.py', true)
             },
             {
                 name: 'Heng Ye',
-                url: '#'
+                url: makeUrl()
             }
         ],
         images: [
@@ -241,16 +252,16 @@ const db = {
     'Group M': {
         category: 'Group M',
         members: [{
-            name: 'Han Sun',
-            url: '#'
-        },
+                name: 'Han Sun',
+                url: makeUrl('Han', 'sunh7_Main.jsp')
+            },
             {
                 name: 'Ziteng Zhang',
-                url: '#'
+                url: makeUrl('Ziteng', 'zitengz1_serv.py', true)
             },
             {
                 name: 'Jay Patel',
-                url: '#'
+                url: makeUrl('Jay', 'jjpatel1_gui.py', true)
             }
         ],
         images: [
@@ -261,16 +272,16 @@ const db = {
     'Group N': {
         category: 'Group N',
         members: [{
-            name: 'Lambert Nguyen',
-            url: '#'
-        },
+                name: 'Lambert Nguyen',
+                url: makeUrl()
+            },
             {
                 name: 'Manpreet Dhindsa',
-                url: '#'
+                url: makeUrl('Manpreet', 'geometry.py', true)
             },
             {
                 name: 'Spencer Kam',
-                url: '#'
+                url: makeUrl('Spencer', 'inputs.jsp')
             }
         ],
         images: [
@@ -281,16 +292,16 @@ const db = {
     'Group O': {
         category: 'Group O',
         members: [{
-            name: 'Eliza Ordonez',
-            url: '#'
-        },
+                name: 'Eliza Ordonez',
+                url: makeUrl('Eliza', 'eordonez_26488963_website.py', true)
+            },
             {
                 name: 'Justin Huy Le',
-                url: '#'
+                url: makeUrl('Justin', 'lejh1_website.py', true)
             },
             {
                 name: 'Selina Wang',
-                url: '#'
+                url: makeUrl('Selina', 'jingw25_geometrysolver.py', true)
             }
         ],
         images: [
@@ -302,16 +313,16 @@ const db = {
     'Group P': {
         category: 'Group P',
         members: [{
-            name: 'Arshdeep Singh Dhillon',
-            url: '#'
-        },
+                name: 'Arshdeep Singh Dhillon',
+                url: makeUrl()
+            },
             {
                 name: 'Jeremy Daproza',
-                url: '#'
+                url: makeUrl('Jeremy', 'term_project.py', true)
             },
             {
                 name: 'Gerry Su',
-                url: '#'
+                url: makeUrl('Gerry', 'main.jsp')
             }
         ],
         images: [
@@ -323,16 +334,16 @@ const db = {
     'Group Q': {
         category: 'Group Q',
         members: [{
-            name: 'Jed Marasigan',
-            url: '#'
-        },
+                name: 'Jed Marasigan',
+                url: makeUrl()
+            },
             {
                 name: 'Jingtao Leo Zhang',
-                url: '#'
+                url: makeUrl('Jingtao', 'mockup.html')
             },
             {
                 name: 'Chris Fernando',
-                url: '#'
+                url: makeUrl('Fernando', 'index.jsp')
             }
         ],
         images: [
@@ -344,16 +355,16 @@ const db = {
     'Group R': {
         category: 'Group R',
         members: [{
-            name: 'Christian Serrano',
-            url: '#'
-        },
+                name: 'Christian Serrano',
+                url: makeUrl('Christian', 'serranc1_tpmain.py', true)
+            },
             {
                 name: 'Aaron Lee',
-                url: '#'
+                url: makeUrl('aaronpl_geo_web_tp', 'triangle_info.jsp', false)
             },
             {
                 name: 'Floranne Ellington',
-                url: '#'
+                url: makeUrl('Ellington', 'index.py', true)
             }
         ],
         images: [
@@ -365,16 +376,16 @@ const db = {
     'Group S': {
         category: 'Group S',
         members: [{
-            name: 'Kenny Tat',
-            url: '#'
-        },
+                name: 'Kenny Tat',
+                url: makeUrl('Kenny', 'tatk_website.jsp')
+            },
             {
                 name: 'Tristan Guinto',
-                url: '#'
+                url: makeUrl('Tristan', 'tguinto_tpweb.html')
             },
             {
                 name: 'Jiarui Zhu',
-                url: '#'
+                url: makeUrl('Jiarui', 'index.jsp')
             }
         ],
         images: [
@@ -386,16 +397,16 @@ const db = {
     'Group T': {
         category: 'Group T',
         members: [{
-            name: 'Chaoran Nong',
-            url: '#'
-        },
+                name: 'Chaoran Nong',
+                url: makeUrl('Chaoran', 'nongc_hello.py', true)
+            },
             {
                 name: 'Mehdi Abbas',
-                url: '#'
+                url: makeUrl('abbasm1_cgi', 'index.py', true)
             },
             {
                 name: 'Kevin Chew',
-                url: '#'
+                url: makeUrl('Chew', 'kychew_70872524_geometry_web_proto.jsp')
             }
         ],
         images: [
