@@ -10,8 +10,8 @@ function makeUrl(name, entry='index.jsp', isPy) {
 }
 
 const db = {
-    'Group A': {
-        category: 'Group A',
+    'Group-A': {
+        category: 'Group-A',
         members: [{
                 name: 'Silver Zhang',
                 url: makeUrl('Silver', 'problem1.py', true)
@@ -34,8 +34,8 @@ const db = {
             'assets/A/Line and Triangle 1.JPG'
         ]
     },
-    'Group B': {
-        category: 'Group B',
+    'Group-B': {
+        category: 'Group-B',
         members: [{
                 name: 'Zunwen Li',
                 url: makeUrl('Zunwen', 'index.jsp')
@@ -53,8 +53,8 @@ const db = {
             'assets/B/Circle and Triangle 15.JPG'
         ]
     },
-    'Group C': {
-        category: 'Group C',
+    'Group-C': {
+        category: 'Group-C',
         members: [{
                 name: 'Steven Long',
                 url: makeUrl('Steven', 'index.jsp')
@@ -72,8 +72,8 @@ const db = {
             'assets/C/Circle and Triangle 16.JPG',
         ]
     },
-    'Group D': {
-        category: 'Group D',
+    'Group-D': {
+        category: 'Group-D',
         members: [{
                 name: 'Steven Huynh',
                 url: makeUrl()
@@ -92,8 +92,8 @@ const db = {
             'assets/D/Two Triangle 6.JPG',
         ]
     },
-    'Group E': {
-        category: 'Group E',
+    'Group-E': {
+        category: 'Group-E',
         members: [{
                 name: 'Daniel Mendoza',
                 url: makeUrl('Mendoza', 'index.jsp')
@@ -112,8 +112,8 @@ const db = {
             'assets/E/Two Triangle 8.JPG',
         ]
     },
-    'Group F': {
-        category: 'Group F',
+    'Group-F': {
+        category: 'Group-F',
         members: [{
                 name: 'Mohammad Gagai',
                 url: makeUrl('Mohammad', 'index.py', true)
@@ -131,8 +131,8 @@ const db = {
             'assets/F/Two Triangle 12.JPG',
         ]
     },
-    'Group G': {
-        category: 'Group G',
+    'Group-G': {
+        category: 'Group-G',
         members: [{
                 name: 'Yutong Wang',
                 url: makeUrl('Yutong', 'index.html')
@@ -150,8 +150,8 @@ const db = {
             'assets/G/Two Triangle 13.JPG',
         ]
     },
-    'Group H': {
-        category: 'Group H',
+    'Group-H': {
+        category: 'Group-H',
         members: [{
                 name: 'Richemond Louidor',
                 url: makeUrl('Richemond', 'userInput.py', true)
@@ -169,8 +169,8 @@ const db = {
             'assets/H/Two Triangle 14.JPG',
         ]
     },
-    'Group I': {
-        category: 'Group I',
+    'Group-I': {
+        category: 'Group-I',
         members: [{
                 name: 'Faisal Iqbal',
                 url: makeUrl('Faisal', 'iqbalf_webApp.py', true)
@@ -188,8 +188,8 @@ const db = {
             'assets/I/Two Triangle 15.JPG',
         ]
     },
-    'Group J': {
-        category: 'Group J',
+    'Group-J': {
+        category: 'Group-J',
         members: [{
                 name: 'Renetta Nelson',
                 url: makeUrl('Renetta', 'renettan_WebProblemmSolver.py', true)
@@ -207,8 +207,8 @@ const db = {
             'assets/J/Two Triangle 16.JPG',
         ]
     },
-    'Group K': {
-        category: 'Group K',
+    'Group-K': {
+        category: 'Group-K',
         members: [{
                 name: 'Qing Huang',
                 url: makeUrl('Qing', 'compute1.py', true)
@@ -228,8 +228,8 @@ const db = {
             'assets/K/Circle and Triangle 8.JPG',
         ]
     },
-    'Group L': {
-        category: 'Group L',
+    'Group-L': {
+        category: 'Group-L',
         members: [{
                 name: 'Ian Dang',
                 url: makeUrl('Dang', 'home.html')
@@ -249,8 +249,8 @@ const db = {
             'assets/L/Two Triangle 7.JPG',
         ]
     },
-    'Group M': {
-        category: 'Group M',
+    'Group-M': {
+        category: 'Group-M',
         members: [{
                 name: 'Han Sun',
                 url: makeUrl('Han', 'sunh7_Main.jsp')
@@ -269,8 +269,8 @@ const db = {
             'assets/M/Two Triangle 11.JPG',
         ]
     },
-    'Group N': {
-        category: 'Group N',
+    'Group-N': {
+        category: 'Group-N',
         members: [{
                 name: 'Lambert Nguyen',
                 url: makeUrl()
@@ -289,8 +289,8 @@ const db = {
             'assets/N/Circle and Triangle 13.JPG',
         ]
     },
-    'Group O': {
-        category: 'Group O',
+    'Group-O': {
+        category: 'Group-O',
         members: [{
                 name: 'Eliza Ordonez',
                 url: makeUrl('Eliza', 'eordonez_26488963_website.py', true)
@@ -310,8 +310,8 @@ const db = {
             'assets/O/Circle and Triangle 6.JPG',
         ]
     },
-    'Group P': {
-        category: 'Group P',
+    'Group-P': {
+        category: 'Group-P',
         members: [{
                 name: 'Arshdeep Singh Dhillon',
                 url: makeUrl()
@@ -331,8 +331,8 @@ const db = {
             'assets/P/Two Triangle 2.JPG',
         ]
     },
-    'Group Q': {
-        category: 'Group Q',
+    'Group-Q': {
+        category: 'Group-Q',
         members: [{
                 name: 'Jed Marasigan',
                 url: makeUrl()
@@ -352,8 +352,8 @@ const db = {
             'assets/Q/Two Triangle 17.JPG',
         ]
     },
-    'Group R': {
-        category: 'Group R',
+    'Group-R': {
+        category: 'Group-R',
         members: [{
                 name: 'Christian Serrano',
                 url: makeUrl('Christian', 'serranc1_tpmain.py', true)
@@ -373,8 +373,8 @@ const db = {
             'assets/R/Circle and Triangle 11.JPG',
         ]
     },
-    'Group S': {
-        category: 'Group S',
+    'Group-S': {
+        category: 'Group-S',
         members: [{
                 name: 'Kenny Tat',
                 url: makeUrl('Kenny', 'tatk_website.jsp')
@@ -394,8 +394,8 @@ const db = {
             'assets/S/Two Circle 1.JPG',
         ]
     },
-    'Group T': {
-        category: 'Group T',
+    'Group-T': {
+        category: 'Group-T',
         members: [{
                 name: 'Chaoran Nong',
                 url: makeUrl('Chaoran', 'nongc_hello.py', true)
