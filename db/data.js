@@ -1,10 +1,10 @@
 const ip = 'http://localhost'
-const jspPort = '8080'
+const jspPort = '8006'
 const pyPort = '8006'
-const jyPort = '待填'
+const jyPort = '8006'
 
 const jspPath = 'GPS-geo-js'
-const pyPath = 'GPS-geo-python/cgi-bin'
+const pyPath = 'GPS-geo-pycgi/cgi-bin'
 const jyPath = 'GPS-geo-jython'
 function makeUrl(name, format, fileName) {
     if (!name) {
